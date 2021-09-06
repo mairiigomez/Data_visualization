@@ -7,12 +7,14 @@ from random_walk import RandomWalk
 # Keep making new walks as long as the program is active
 while True:
     # Make a randomwalk instance 
-    rw = RandomWalk(50_000)
+    rw = RandomWalk(5000)
     rw.fill_walk()
 
     # Plot the points in the walk 
     plt.style.use('classic')
-    fig, ax = plt.subplots()
+
+    # resolution system passing dpi
+    fig, ax = plt.subplots(figsize=(10,5), dpi=100)
     point_numbers = range(rw.num_point)
 
     # Create each point for the values of the instance 
