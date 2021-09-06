@@ -7,6 +7,8 @@ y_values = [1, 4, 9, 16, 25]
 
 plt.style.use('seaborn')
 fig, ax = plt.subplots()
+# s is the point size
+# using scatter to get each point individually
 ax.scatter(x_values, y_values, s=100)
 
 # Set chart tittle and label axes
